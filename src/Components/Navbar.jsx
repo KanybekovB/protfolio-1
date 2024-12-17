@@ -1,42 +1,68 @@
+
+// import { Link } from 'react-router';
+// import styled from 'styled-components';
+
+// const Nav = styled.nav`
+//   background-color: #333;
+//   padding: 10px;
+// `;
+
+// const NavList = styled.ul`
+//   display: flex;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// `;
+
+// const NavItem = styled.li`
+//   margin-right: 20px;
+// `;
+
+// const NavLink = styled(Link)`
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px;
+//   border-radius: 5px;
+//   transition: background-color 0.3s;
+
+//   &:hover {
+//     background-color: #555;
+//   }
+// `;
+
+// const Navbar = () => {
+//   return (
+//     <Nav>
+//       <NavList>
+//         <NavItem>
+//           <NavLink to="/">Home</NavLink>
+//         </NavItem>
+//         <NavItem>
+//           <NavLink to="/blogs">Blogs</NavLink>
+//         </NavItem>
+//         <NavItem>
+//           <NavLink to="/contact">Contact</NavLink>
+//         </NavItem>
+//       </NavList>
+//     </Nav>
+//   );
+// };
+
+// export default Navbar;
+
+
 import { Link } from 'react-router';
-import styled from 'styled-components';
-
-const Nav = styled.nav`
-  background-color: #333;
-  padding: 10px;
-`;
-
-const NavList = styled.ul`
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-`;
-
-const NavItem = styled.li`
-  margin-right: 20px;
-`;
-
-const NavLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 const Navbar = () => {
   return (
-    <Nav>
-      <NavList>
-        <NavItem><NavLink to="/">Home</NavLink></NavItem>
-        <NavItem><NavLink to="/market">Marketplace</NavLink></NavItem>
-        <NavItem><NavLink to="/ranking">Ranking</NavLink></NavItem>
-        <NavItem><NavLink to="/wallet">Connect a wallet</NavLink></NavItem>
-      </NavList>
-      <h1>Your Company</h1>
-    </Nav>
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/market">Market</Link></li>
+        <li><Link to="/ranking">Ranking</Link></li>
+        <li><Link to="/wallet">Wallet</Link></li>
+      </ul>
+    </nav>
   );
 };
 
