@@ -9,14 +9,14 @@ import Wallet from './Pages/Wallet';
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/market" element={<Market />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/wallet" element={<Wallet />} />
-        </Routes>
-      </Layout>
+        </Route>
+      </Routes>
     </Router>
   );
 }

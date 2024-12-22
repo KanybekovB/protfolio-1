@@ -1,22 +1,13 @@
-
-// import Navbar from '../Components/Navbar'
-
-// const Layout = () => {
-//     return(
-//         <>
-//         <Navbar />
-//         </>
-//     )
-// }
-// export default Layout
+import { Outlet } from 'react-router';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const Layout = () => {
   return (
     <>
       <Navbar />
-      <div>
-      </div>
+      <Outlet />
+      <Footer />
     </>
   );
 };

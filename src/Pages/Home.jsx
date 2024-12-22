@@ -1,8 +1,9 @@
-const Home = () => {
-    return(
+function Home() {
+    return (
         <>
-        <h1>Welcome to the Homepage</h1>
+        <h1>Welcome to the Home Page</h1>
         </>
     )
 }
-export default Home
+
+export default Home;
